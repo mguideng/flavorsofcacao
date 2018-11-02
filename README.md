@@ -1,11 +1,14 @@
 
+README
+================
+Maria Guideng
+
 # flavorsofcacao
 
 ### Data based on tasting ratings for plain dark chocolate bars.
 
-**About this dataset**
-
-The source of the data is The Manhattan Chocolate Society and is made available by Brady and Andrea Brelinski via the [flavorsofcacao.com](http://flavorsofcacao.com/chocolate_database.html) website. The CSV file can be found in the `data` folder. Updated as of 10/6/2018.
+**About this dataset**    
+The source of the data is The Manhattan Chocolate Society and is made available by Brady and Andrea Brelinski via the [flavorsofcacao.com](http://flavorsofcacao.com/chocolate_database.html) website. The CSV file can be found in the `data` folder.
 
 **File dimensions**    
 
@@ -13,11 +16,12 @@ The source of the data is The Manhattan Chocolate Society and is made available 
 |------------|------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | raw_df.csv | 1,937 | 9 | 'Company (Maker-if known)',      'Specific Bean Origin or Bar Name',     'REF',    'Review Date',    'Cocoa Percent',    'Company Location',     'Rating',    'Bean Type',     'Broad Bean Origin' |
 
-**Exploration ideas**
+**Exploration ideas**    
   * EDA using visualizations
   * Chocolate bar rating analysis
 
-**To get the latest data**
+**To get the latest data**    
+Updated as of 10/6/2018.
 
 
 ```python
@@ -32,7 +36,7 @@ import pandas as pd
 # os.chdir('C:\\Users\\...\\folder-name')
 
 # Scraper
-# Credit ref: https://stackoverflow.com/questions/52066389/scrape-table-built-with-spry-framework-using-beautifulsoup
+# Credit: https://stackoverflow.com/questions/52066389/scrape-table-built-with-spry-framework-using-beautifulsoup
 
 r = requests.get('http://flavorsofcacao.com/database_w_REF.html')
 soup = BeautifulSoup(r.content, 'html.parser')
